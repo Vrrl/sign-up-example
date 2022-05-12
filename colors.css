@@ -1,0 +1,35 @@
+body[theme='city']{
+    --primary: rgb(50, 85, 102);
+    --primary-50: hsl(219deg 52% 76%);
+    --secondary: rgb(69, 57, 84);
+    --secondary-50: rgb(61, 36, 90);
+
+    /* #b294ff, #57e6e6 */
+
+    --text-primary: #bfd2ff;
+    --text-primary-50: rgb(57, 63, 84);
+
+    --input-background: rgba(57, 63, 84, 0.8);
+    --input-placeholder-text: #7985a1;
+
+    --bg-primary: #373b52;
+    --bg-secondary: #1d1e26;
+}
+
+body[theme='fire']{
+    --primary: #42abd4;
+    --primary-50: #3f5294;
+    --secondary: #5b2d8f;
+    --secondary-50: rgb(90, 82, 36);
+
+    /* #b294ff, #57e6e6 */
+
+    --text-primary: #3f5294;
+    --text-primary-50: rgb(200, 201, 202);
+
+    --input-background: #f1f1f1;
+    --input-placeholder-text: #a19e79;
+
+    --bg-primary: #77aa99 ;
+    --bg-secondary: #7e7fb4 ;
+}

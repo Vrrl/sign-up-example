@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import './colors.css';
+
+
+* { margin: 0; padding: 0; }
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--primary-50);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-image: radial-gradient(circle at 0% 0%, var(--bg-primary), var(--bg-secondary));
+    color: var(--text-primary);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 560px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+    background-image: radial-gradient(circle at 0% 0%, var(--primary), var(--secondary));
+    filter: drop-shadow(4px 4px 150px var(--primary));
+}
+
+h1{
+    margin-bottom: 32px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+input {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    line-height: 2.4rem;
+    padding: 0.4rem 1.6rem;
+    background: var(--input-background);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    color: var(--text-primary);
+    width: 300px;
+
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--bg-placeholder-text);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+}
+
+
+button{
+    width: 355px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid var(--primary-50);
+    background-color: var(--primary);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 24px;
+
+    transition: 150ms;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--primary-50);
+    color: var(--text-primary-50);
+
+}
+
+
+
