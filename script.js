@@ -157,7 +157,7 @@ function submitForm(){
 }
 
 
-document.getElementById("form").addEventListener('click', function(e) {
+document.getElementById("formbutton").addEventListener('click', function(e) {
     e.preventDefault();
     submitForm()    
 });
