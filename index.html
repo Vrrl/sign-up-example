@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css"></link>
-    <script src="script.js"></script>
 </head>
 <body theme="city">
-    <form class="form">
+    <form class="form" id="form" >
         <h1>Sign Up</h1>
 
-        <input type="text" name="username" placeholder="Username">
+        <h6 id="username-error" class="error"></h6>
+        <input type="text" name="username" id="username" placeholder="Username">
 
-        <input type="email" name="email" placeholder="Email">
+        <h6 id="email-error" class="error"></h6>
+        <input type="email" name="email" id="email" placeholder="Email">
 
-        <input type="password" name="password" placeholder="Senha">
+        <h6 id="password-error" class="error"></h6>
+        <input type="password" name="password" id="password" placeholder="Senha">
 
-        <input type="password" name="cpassword" placeholder="Confirmação de senha">
+        <h6 id="cpassword-error" class="error"></h6>
+        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmação de senha">
 
-        <button type="submit">Cadastrar</button>
+
+        <button type="submit" id="formbutton">Cadastrar</button>
 
     </form>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

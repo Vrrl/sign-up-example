@@ -51,7 +51,7 @@ input {
     margin-bottom: 18px;
     color: var(--text-primary);
     width: 300px;
-
+    
 }
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -61,6 +61,18 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     letter-spacing: 2px;
 }
 
+input.valid {
+   border: 1px solid var(--success)!important;
+}
+input.invalid {
+    border: 1px solid var(--error)!important;
+}
+
+.error{
+    margin-bottom: 8px;
+    color: #d90d0d;
+    font-size: 0.8rem;
+}
 
 button{
     width: 355px;
