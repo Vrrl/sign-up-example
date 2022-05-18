@@ -9,27 +9,46 @@
 </head>
 <body theme="city">
     <form class="form" id="form" >
-        <h1>Sign Up</h1>
+        <div id="signup">
+            <h1>Sign Up</h1>
+            
+            <h6 id="username-error" class="error"></h6>
+            <input type="text" name="username" id="username" placeholder="Username">
+            
+            <h6 id="email-error" class="error"></h6>
+            <input type="email" name="email" id="email" placeholder="Email">
+            
+            <h6 id="password-error" class="error"></h6>
+            <input type="password" name="password" id="password" placeholder="Senha">
+            
+            <h6 id="cpassword-error" class="error"></h6>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirmação de senha">
+            
+            
+            <button type="submit" id="formbutton">Cadastrar</button>
+            <a class="switch" onclick="switchto('cep')">Busca Cep</a>
+        </div>
 
-        <h6 id="username-error" class="error"></h6>
-        <input type="text" name="username" id="username" placeholder="Username">
-
-        <h6 id="email-error" class="error"></h6>
-        <input type="email" name="email" id="email" placeholder="Email">
-
-        <h6 id="password-error" class="error"></h6>
-        <input type="password" name="password" id="password" placeholder="Senha">
-
-        <h6 id="cpassword-error" class="error"></h6>
-        <input type="password" name="cpassword" id="cpassword" placeholder="Confirmação de senha">
-
-
-        <button type="submit" id="formbutton">Cadastrar</button>
+        <div id="cep" style="display: none;">
+            <h6 class="loader"></h6>
+            <h6 id="cep-error" class="error"></h6>
+            <input type="text" name="CEP" id="cepInput" placeholder="CEP">
+            <input type="text" name="rua" id="rua" placeholder="Rua">
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            <input type="text" name="uf" id="uf" placeholder="UF">
+            <input type="text" name="ibge" id="ibge" placeholder="IBGE">
+            <input type="text" name="ddd" id="ddd" placeholder="DDD">
+            
+            <a class="switch" onclick="switchto('signup')">Sign Up</a>
+        </div>
 
     </form>
 
 
-    <script src="script.js"></script>
+    <script src="form.js"></script>
+    <script src="cep.js"></script>
+    <script src="switch.js"></script>
 
 </body>
 </html>
