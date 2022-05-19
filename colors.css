@@ -9,7 +9,7 @@ body[theme='city']{
     --text-primary: #bfd2ff;
     --text-primary-50: rgb(57, 63, 84);
 
-    --input-background: rgba(57, 63, 84, 0.8);
+    --input-background: rgb(44 49 63 / 80%);
     --input-placeholder-text: #7985a1;
 
     --bg-primary: #373b52;
